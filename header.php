@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itararé Prefeitura</title>
+    <link rel="icon" href="http://www.itarare.sp.gov.br/wp-content/uploads/theme_aurl/icon_site-32x32.png?ver=1.12" sizes="32x32" />
+    <link rel="icon" href="http://www.itarare.sp.gov.br/wp-content/uploads/theme_aurl/icon_site-192x192.png?ver=1.12" sizes="192x192" />
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
     <link  rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
 

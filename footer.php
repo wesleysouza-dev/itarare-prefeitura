@@ -106,7 +106,7 @@
                                 <li><a href="#">Licitações</a></li>
                                 <li><a href="#">ESUS</a></li>
                                 <li><a href="#">RM</a></li>
-                                <li><a href="#">Atendimento</a></li>
+                                <li><a href="page-contact.php">Atendimento</a></li>
                                 <li><a href="#">Webmail</a></li>
                             </ul>
                         </nav>

@@ -80,6 +80,10 @@ strong {
     background-color: $orange;
 }
 
+.bg-white {
+    background: #fff !important;
+}
+
 .c-text-4040 {
     color: map-get($theme-colors, "text-4040");
 }
@@ -1269,14 +1273,23 @@ ul.list-quick-access {
             }
 
             header {
-                h6 {
-                    font-size: 18px;
+                a {
+                    text-decoration: none !important;
+                    h6 {
+                        font-size: 18px;
+                        color: $blue-dark;
+                    }
                 }
             }
             p {
                 color: #343434;
                 font-size: 14px;
                 margin-bottom: 30px;
+                
+                a {
+                    text-decoration: none !important;
+                    color: #343434;
+                }
             }
 
             ul.list-categories {
@@ -1329,6 +1342,12 @@ ul.list-quick-access {
     padding-left: 35px;
     border-left: 1px solid rgb(243, 243, 243);
 
+    @media (max-width: 767px) {
+        padding-left: 0;
+        border-left: none;
+        margin-top: 35px;
+    }
+
 
     .item-aside {
         margin-bottom: 45px;
@@ -1360,6 +1379,11 @@ ul.list-quick-access {
                 font-size: 14px;
                 border-color: rgba(160, 160, 160, 0.1);
 
+                span {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
                 .icon {
                     width: 50px;
                     height: 50px;
@@ -1381,6 +1405,11 @@ ul.list-quick-access {
             padding: 10px 5px;
             font-size: 12.5px;
 
+            span {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
             .icon {
                 min-width: 44px;
                 min-height: 44px;
@@ -1394,6 +1423,137 @@ ul.list-quick-access {
 
             br {
                 display: none;
+            }
+        }
+    }
+}
+
+.single {
+    header {
+        h1 {
+            font-size: 26px;
+
+            @media (max-width: 560px) {
+                font-size: 20px;
+            }
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #343434;
+            margin-top: 12px;
+            display: block;
+
+            @media (max-width: 560px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .share-author {
+        padding-top: 18px;
+        margin-top: 18px;
+        border-top: 1px solid #ebebeb;
+        display: table;
+        width: 100%;
+
+        .share-buttons {
+
+            li { 
+                margin:0 5px 4px 0;
+                @include borderRadius(5px);
+
+                a{
+                    color:#fff;font-size:14px;display:inline-block;width:auto;padding:10px 16px;box-sizing:border-box; text-decoration: none !important;
+
+                    @media (max-width: 560px) {
+                        padding:5px 8px;
+                        font-size: 12.5px;
+                    }
+
+                    i{margin-right:5px;}
+                }
+
+                &.facebook {background:#2D609B;}
+                &.linkedin {background:#007bc7;}
+                &.twitter {background:#27BEF7;}
+            }
+        }
+
+        .credits {
+            line-height: 18px;
+        }
+    }
+
+    .pr-md-3 {
+        p {
+            color: #6a6a6a;
+        }
+    }
+
+    .sec-border {
+        border: 1px solid #ededed;
+        @include borderRadius(5px);
+        padding: 8px 10px;
+    }
+
+    .title-section {
+        color: $blue-dark;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    footer {
+        .tags {
+           
+            ul {
+                li {
+                    margin: 5px 5px 2px 0;
+
+                    a {
+                        padding: 5px 10px;
+                        font-size: 13px;
+                        background: $blue;
+                        color: #fff;
+                        @include borderRadius(4px);
+
+                        &:hover {
+                            background: $orange;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rpwwt-widget {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            margin: 0 0 1.5em;
+            a {
+                img {
+                    max-width: 75px;
+                    width: 100%;
+                    height: auto;
+                    display: inline;
+                    float: left;
+                    margin: .3em .75em .75em 0;
+                }
+
+                .rpwwt-post-title {
+                    color: #333;
+                    line-height: 20px;
+                }
+            }
+
+            .rpwwt-post-date {
+                font-size: 13px;
+                color: #999;
             }
         }
     }

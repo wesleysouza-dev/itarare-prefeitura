@@ -1,28 +1,36 @@
 <?php 
     require('header.php');
+    $title_page = 'Todas as Notícias';
     require('temp-parts/breadcrumb.php')
 ?>
 
-<main id="main-content" class="py-5">
+<main id="main-content" class="py-4 py-sm-5">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8">
-                <div class="pr-md-3">
+                <section class="pr-md-3">
                     
                     <ul class="list-style-none list-news p-0 m-0">
                         <?php for ($i=0;$i<5;$i++) : ?>
                         <li>
-                            <article class="d-flex">
-                                <a href="#" class="mr-0 mr-md-4">
+                            <article class="d-block d-md-flex">
+                                <a href="single-news.php" class="mb-3 mb-md-0 d-table mr-0 mr-md-4">
                                     <img src="assets/images/noticias/thumb-news.jpg" alt="">
                                 </a>
                                 <div>
                                     <header>
-                                        <h6>Prefeitura de Itararé (SP) realiza ação de acolhimento a pessoas em situação de rua</h6>
+                                        <a href="single-news.php">
+                                            <h6>Prefeitura de Itararé (SP) realiza ação de acolhimento a pessoas em situação de rua</h6>
+                                        </a>
                                     </header>
-                                    <p>
-                                    Munícipes receberam cobertores e foram convidados a passar a noite na Casa de Passagem do município.
-                                    </p>
+
+                                    
+                                        <p>
+                                            <a href="single-news.php">
+                                            Munícipes receberam cobertores e foram convidados a passar a noite na Casa de Passagem do município.
+                                            </a>
+                                        </p>
+                                    
 
                                     <footer class="d-flex justify-content-between">
                                         <ul class="list-categories list-style-none p-0 m-0 d-flex flex-wrap">
@@ -65,116 +73,11 @@
                         </ul>
                     </nav>
                     
-                </div>
+                </section>
             </div>
 
             <div class="col-12 col-md-4">
-                <aside id="sidebar-default">
-                    <div class="item-aside">
-                        <h6>Acesso Rápido</h6>
-
-                        <ul class="row list-quick-access text-center list-style-none p-0 m-0 my-4">
-                            <?php
-                                $titulos = [
-                                    'Portal de <br><strong style="color: #009452;">Transparência</strong>',
-                                    '<strong style="color: #218CA5;">Nota Fiscal<br></strong> Eletrônica',
-                                    'Mural de <br><strong style="color: #4372C6;">Notícias</strong>',
-                                    '<strong style="color: #1E7EBE;">Jornal<br></strong> Oficial',
-                                    'Acesso às <br><strong style="color: #EE7928;">Licitações</strong>',
-                                    'Processo <br><strong style="color: #F6AF26;">Seletivo</strong>',
-                                ];
-                                $imagens= [
-                                    'portal-de-transparencia',
-                                    'nota-fiscal-eletronica',
-                                    'mural-de-noticias',
-                                    'jornal-oficial',
-                                    'acesso-as-licitacoes',
-                                    'processo-seletivo'
-                                ];
-
-                                foreach ($titulos as $key => $titulo) {
-                            ?>
-                            <!-- item -->
-                            <li class="col-6 item my-2">
-                                <a href="#">
-                                    <span class="icon d-flex align-items-center justify-content-center mb-3 mx-auto">
-                                        <img src="assets/images/icons/acesso-rapido/<?=$imagens[$key];?>.svg" alt="" class="img-fluid">
-                                    </span>
-                                    <span class="title d-block"><?=$titulo;?></span>
-                                </a>
-                            </li>
-                            <!-- item -->
-                            <?php } ?>
-                        </ul>
-
-                        <a href="#" class="btn-default btn-icon d-table mx-auto mt-4">
-                            <div class="d-flex align-items-center">
-                                <span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-plus"></i></span>
-                                <span class="text-uppercase">Acesse Todos</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="item-aside">
-                        <a href="#">
-                            <img src="assets/images/noticias/covid-sidebar.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-
-                    <div class="item-aside">
-                        <h6>Principais Serviços</h6>
-
-                        <div class="main-services-slider">
-                            <div class="item text-left d-flex justify-content-between flex-wrap">
-                                <!-- linha -->
-                                <a href="#" class="d-flex align-items-center" style="border-left-color: #009452;">
-                                    <span class="icon d-flex align-items-center justify-content-center mr-2" style="background: #009452;">
-                                        <img src="assets/images/icons/servicos/banco-povo.svg" class="img-fluid"/>
-                                    </span>
-                                    <span class="title">
-                                        Banco do <br>Povo
-                                    </span>
-                                </a>
-
-                                <a href="#" class="d-flex align-items-center" style="border-left-color: #66388D;">
-                                    <span class="icon d-flex align-items-center justify-content-center mr-2" style="background: #66388D;">
-                                        <img src="assets/images/icons/servicos/horario-de-onibus.svg" class="img-fluid"/>
-                                    </span>
-                                    <span class="title">
-                                        Horário de Ônibus
-                                    </span>
-                                </a>
-
-                                <!-- linha -->
-                                <a href="#" class="d-flex align-items-center" style="border-left-color: #004A98;">
-                                    <span class="icon d-flex align-items-center justify-content-center mr-2" style="background: #004A98;">
-                                        <img src="assets/images/icons/servicos/acesse-links-uteis.svg" class="img-fluid"/>
-                                    </span>
-                                    <span class="title">
-                                        Acesse os links úteis
-                                    </span>
-                                </a>
-
-                                <!-- linha -->
-                                <a href="#" class="d-flex align-items-center" style="border-left-color: #EAAA0A;">
-                                    <span class="icon d-flex align-items-center justify-content-center mr-2" style="background: #EAAA0A;">
-                                        <img src="assets/images/icons/servicos/vagas-de-emprego.svg" class="img-fluid"/>
-                                    </span>
-                                    <span class="title">
-                                        Vagas de Emprego
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn-default btn-icon d-table mx-auto mt-4">
-                            <div class="d-flex align-items-center">
-                                <span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-plus"></i></span>
-                                <span class="text-uppercase">Mais Serviços</span>
-                            </div>
-                        </a>
-                    </div>
-                </aside>
+                <?php require('temp-parts/sidebar.php'); ?>
             </div>
         </div>
                 
