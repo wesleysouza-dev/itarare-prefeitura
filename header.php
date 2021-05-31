@@ -25,7 +25,7 @@
                     <li><a href="#">Esus</a></li>
                     <li><a href="#">Rm</a></li>
                     <li><a href="#">Plano Diretor</a></li>
-                    <li><a href="#">Atendimento</a></li>
+                    <li><a href="page-contact.php">Atendimento</a></li>
                     <li><a href="#">Webmail</a></li>
                 </ul>
             </nav>

@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="col-12 col-lg-9 d-flex justify-content-between flex-wrap flex-md-nowrap">
-                     <ul class="list-items list-style-none p-0 mb-4 m-md-0">
+                     <ul class="contact-list list-items list-style-none p-0 mb-4 m-md-0">
                         <li>
                             <a href="#" class="d-flex align-items-center">      
                                 <span class="icon mr-3 d-flex align-items-center justify-content-center">

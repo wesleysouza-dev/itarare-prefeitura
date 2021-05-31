@@ -654,9 +654,23 @@ strong {
 
                 @media (max-width: 576px) {
                     h6 {
-
                         &.fs-20 {
                             font-size: 16px;
+                        }
+                    }
+                }
+
+                @media (max-width: 360px) {
+                    
+                    padding-bottom: 35px;
+                    h6 {
+
+                        &.fs-16 {
+                            font-size: 14px;
+                        }
+
+                        &.fs-20 {
+                            font-size: 14px;
                         }
                     }
                 }
@@ -946,6 +960,10 @@ ul.list-quick-access {
 
             @media (max-width: 480px) {
                 width: 100%;
+
+                br {
+                    display: none;
+                }
             }
 
             &:hover {
@@ -1013,50 +1031,6 @@ ul.list-quick-access {
 #footer-main {
     background: linear-gradient(360deg, #00598D 0%, #005FA6 100%);
     color: #fff;
-
-    .list-items {
-
-
-        li {
-            margin-bottom: 20px;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-
-            a {
-                text-decoration: none !important;
-
-                .subtitle {
-                    color: $blue-extralight;
-                    font-style: italic;
-                    letter-spacing: 2px;
-                    font-size: 14px;
-                }
-
-                .title {
-                    color: #fff;
-                    font-size: 20px;
-
-                    @media (max-width: 480px) {
-                        font-size: 16px;
-                    }
-                }
-
-                .icon {
-                    display: block;
-                    min-width: 45px;
-                    min-height: 45px;
-                    background: linear-gradient(90deg, $blue 0%, $secondary-footer 100%);
-                    @include borderRadius(50%);
-                }
-            }
-
-            &.rota {
-                padding-left: 60px;
-            }
-        }
-    }
 
     .border-col {
         width: 1px;
@@ -1194,6 +1168,49 @@ ul.list-quick-access {
                     }
                 }
             }
+        }
+    }
+}
+
+.contact-list.list-items {
+
+    li {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none !important;
+
+            .subtitle {
+                color: $blue-extralight;
+                font-style: italic;
+                letter-spacing: 2px;
+                font-size: 14px;
+            }
+
+            .title {
+                color: #fff;
+                font-size: 20px;
+
+                @media (max-width: 480px) {
+                    font-size: 16px;
+                }
+            }
+
+            .icon {
+                display: block;
+                min-width: 45px;
+                min-height: 45px;
+                background: linear-gradient(90deg, $blue 0%, $secondary-footer 100%);
+                @include borderRadius(50%);
+            }
+        }
+
+        &.rota {
+            padding-left: 60px;
         }
     }
 }
@@ -1351,6 +1368,10 @@ ul.list-quick-access {
 
     .item-aside {
         margin-bottom: 45px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     h6 {
@@ -1423,6 +1444,33 @@ ul.list-quick-access {
 
             br {
                 display: none;
+            }
+        }
+    }
+
+    .contact-list.list-items {
+        li {
+            margin-bottom: 10px;
+
+            a {
+                .subtitle {
+                    letter-spacing: 0;
+                    font-size: 12px;
+                }
+
+                .title {
+                    color: #999;
+                    font-size: 13.5px;
+                }
+
+                .icon {
+                    min-width: 35px;
+                    min-height: 35px;
+
+                    img {
+                        max-width: 20px!important;
+                    }
+                }
             }
         }
     }
@@ -1556,5 +1604,29 @@ ul.list-quick-access {
                 color: #999;
             }
         }
+    }
+}
+.c-red { color: red !important; }
+.c-999 { color: #999 !important; }
+#submit-contact {
+    background: $orange;
+    color: #fff;
+    padding: 6px 16px;
+    border: none;
+    @include borderRadius(4px);
+
+    &:hover {
+        background: $orangeHover;
+    }
+}
+
+.form-default {
+    label {
+        font-size: 14px;
+        color: #4b4b4b;
+        font-weight: 600;
+    }
+    textarea {
+        height: 160px;
     }
 }

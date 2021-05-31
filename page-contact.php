@@ -1,106 +1,130 @@
 <?php 
     require('header.php');
-    $title_page = false;
+    $title_page = 'Atendimento';
 ?>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v10.0" nonce="GSc8KHta"></script>
-<main id="main-content" class="py-4 py-sm-5 single">
+<?php require('temp-parts/breadcrumb.php'); ?>
+<main id="main-content" class="py-4 py-sm-5">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8">
                 <section class="pr-md-3">
+                  <p class="c-999">
+                  Precisando de auxílio? Quer nos enviar suas sugestões ou críticas? <br>
+                  Preencha o formulário abaixo e envie sua mensagem.
+                  </p>
 
-                  <?php require('temp-parts/breadcrumb.php'); ?>
-                    
-                  <header>
-                    <h1>
-                      Prefeitura de Itararé (SP) realiza ação de acolhimento a pessoas em situação de rua
-                    </h1>
+                  <form action="" class="form-default mt-4">
+                    <div class="row">
 
-                    <p class="subtitle">
-                      Munícipes receberam cobertores e foram convidados a passar a noite na Casa de Passagem do município.
-                    </p>
-                  </header>
+                      <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="">Seu nome<span class="c-red">*</span></label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
 
-                  <div class="share-author d-flex justify-content-between align-items-start flex-wrap w-100 mb-4">
-                    <ul class="share-buttons list-style-none px-0 pb-0 my-2 d-flex">
-                      <li class="facebook">
-                          <a href="http://facebook.com/sharer.php?u=http://www.itarare.sp.gov.br/noticia/calendario-de-vacinacao-itarare-sp-comeca-a-vacinar-pessoas-de-18-a-34-anos-com-comorbidades-nesta-quarta-02/" title="Facebook" title="" target="_blank">
-                              <i class="fa fa-facebook-square "></i>
-                              <span>Facebook</span>
-                          </a>
-                      </li>
+                      <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="">Seu e-mail<span class="c-red">*</span></label>
+                          <input type="email" class="form-control">
+                        </div>
+                      </div>
 
-                      <li class="twitter">
-                          <a href="http://twitter.com/share?url=http://www.itarare.sp.gov.br/noticia/calendario-de-vacinacao-itarare-sp-comeca-a-vacinar-pessoas-de-18-a-34-anos-com-comorbidades-nesta-quarta-02/" title="Twitter" target="_blank">
-                              <i class="fa fa-twitter"></i>
-                              <span>Twitter</span>
-                          </a>
-                      </li>
-                      
-                      <li class="linkedin">
-                          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.itarare.sp.gov.br/noticia/calendario-de-vacinacao-itarare-sp-comeca-a-vacinar-pessoas-de-18-a-34-anos-com-comorbidades-nesta-quarta-02/%2Fdemo-category%2F&title=Titulo-da-noticia&summary=&source=Prefeitura-Itarare-SP" title="Linkedin" target="_blank">
-                              <i class="fa fa-linkedin"></i>
-                              <span>Linkedin</span>
-                          </a>
-                      </li>
-                      
-                      
-                    </ul>
+                      <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="">Telefone<span class="c-red">*</span></label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
 
-                    <div class="author d-flex align-items-center my-2">
-                      <img src="https://wesleydesign.com.br/projetos/tabu/assets/images/authors/img1.jpg" alt="Autor">
-                      <div class="credits ml-2">
-                          <span class="c-blue fs-14 fw-600 d-block">Redação Prefeitura</span>
-                          <span class="d-block fs-13">Postado em 31/05/2021</span>
+                      <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="">Selecione o setor<span class="c-red">*</span></label>
+                          <select class="form-control">
+                            <option value="">Governo Municipal</option>
+                            <option value="">Chefe do Gabinete</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="">Mensagem<span class="c-red">*</span></label>
+                          <textarea class="form-control w-100"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <input type="submit" value="Enviar Mensagem" class="wpcf7-form-control wpcf7-submit text-uppercase" id="submit-contact">
                       </div>
                     </div>
-                  </div>
-
-                  <!-- THUMBNAIL MAIN -->
-                  <img src="assets/images/noticias/single-news.jpg" alt="" class="img-fluid mt-2 mb-4">
-                  <!-- FIM THUMBNAIL MAIN -->
-
-                  <!-- DESCRIPTION CONTENT POST -->
-                  <p>A Prefeitura de Itararé (SP), por meio das Secretarias Municipais de Desenvolvimento Social e Serviços, juntamente a Guarda Civil Municipal (GCM), realizou, durante a fria noite de sábado (22), uma operação de acolhimento a pessoas em situação de rua. <br><br>
-
-                  Conforme a secretária da Pasta, Luciana Perucio, durante a ação, aproximadamente 30 pessoas receberam cobertores, bolachas e chocolate quente. “Visitamos diversos pontos da cidade, locais que, costumeiramente, são utilizados como pernoite”, explica. <br><br>
-
-                  “Durante a abordagem, falamos com cada um dos munícipes sobre o serviço de acolhimento da Casa de Passagem, além de ofertar também acompanhamento pelo Centro de Atenção Psicossocial (CAPS) e por profissionais da assistência”, detalha Luciana.<br><br>
-
-                  Para o prefeito, Heliton do Valle, iniciativas como essas são fundamentais. “É nosso dever, não só como governantes, mas como seres humanos, oferecer uma mão amiga àqueles que mais precisam. É através dessa busca ativa e desse apoio prestado por nossa equipe que muitas pessoas encontram forças e esperança para recomeçar”, enfatiza. <br><br>
-
-                  Saiba mais – A Casa de Passagem, à rua São Pedro, 715, Centro, está de portas abertas para o acolhimento daqueles que precisarem. <br><br>
-
-                  A Secretaria Municipal de Desenvolvimento Social também está à disposição da população através do telefone (15) 3532-2271. A sede da Pasta fica à rua São Pedro, 420, Centro. O horário de atendimento é de segunda a sexta, das 8h às 17h.</p>
-                  <!-- FIM DESCRIPTION CONTENT POST -->
-
-                  <footer class="mt-5 mb-3">
-                    <div class="tags d-block d-sm-flex sec-border">
-                      <span class="title-section mr-4">TAGS:</span>
-                      <ul class="list-tags list-style-none p-0 my-0 d-flex flex-wrap">
-                        <li><a href="#">assistência social</a></li>
-                        <li><a href="#">operação inverno</a></li>
-                        <li><a href="#">inverno</a></li>
-                        <li><a href="#">moradores de rua</a></li>
-                      </ul>
-                    </div>
-                  </footer>
-
-
-                  <!-- COMENTARIOS FACEBOOK -->
-                  <div class="sec-border mt-4">
-                    <span class="title-section mr-3">Deixe seu comentário</span>
-
-                    <div class="fb-comments w-100" data-href="http://www.itarare.sp.gov.br" data-width="100%" data-numposts="3"></div>
-                  </div>
-                  <!-- FIM COMENTARIOS FACEBOOK -->
-
+                  </form>
               </section>
             </div>
 
             <div class="col-12 col-md-4">
-              <?php require('temp-parts/sidebar.php'); ?>
+              <aside id="sidebar-default">
+
+                <div class="item-aside">
+                  <ul class="list-items contact-list list-style-none p-0 mb-4 m-md-0">
+                    <li>
+                        <a href="#" class="d-flex align-items-center">      
+                            <span class="icon mr-3 d-flex align-items-center justify-content-center">
+                                <img src="assets/images/rodape/telefone.svg" alt="Telefone">
+                            </span>
+                            <div>
+                                <span class="subtitle d-block">
+                                    telefone
+                                </span>
+                                <span class="title d-block">(15) 3532-8000</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="d-flex align-items-center">      
+                            <span class="icon mr-3 d-flex align-items-center justify-content-center">
+                                <img src="assets/images/rodape/email.svg" alt="E-mail">
+                            </span>
+                            <div>
+                                <span class="subtitle d-block">
+                                    e-mail
+                                </span>
+                                <span class="title d-block">protocolo@itarare.sp.gov.br</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="d-flex align-items-center">      
+                            <span class="icon mr-3 d-flex align-items-center justify-content-center">
+                                <img src="assets/images/rodape/facebook.svg" alt="Facebook">
+                            </span>
+                            <div>
+                                <span class="subtitle d-block">
+                                    Rede Social
+                                </span>
+                                <span class="title d-block">Acompanhe nossa Fanpage</span>
+                            </div>
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                <div class="item-aside">
+                  <h6>Nossa Localização</h6>
+
+                  <p class="c-999 fs-14">
+                    Rua XV de Novembro, 83 - Centro <br>
+                    Itararé, São Paulo <br>
+                    CEP 18.460-000
+                  </p>
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.601645341844!2d-49.34155028448671!3d-24.1155004844106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c3b56c02bf1e13%3A0x1ad4686daece5dcb!2sR.%20Quinze%20de%20Novembro%2C%2083%20-%20Centro%2C%20Itarar%C3%A9%20-%20SP%2C%2018460-000!5e0!3m2!1sen!2sbr!4v1622497448409!5m2!1sen!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+            </aside>
             </div>
         </div>
                 

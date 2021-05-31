@@ -14,8 +14,8 @@
                         <?php for ($i=0;$i<5;$i++) : ?>
                         <li>
                             <article class="d-block d-md-flex">
-                                <a href="single-news.php" class="mb-3 mb-md-0 d-table mr-0 mr-md-4">
-                                    <img src="assets/images/noticias/thumb-news.jpg" alt="">
+                                <a href="single-news.php" class="mb-3 mb-md-0 d-table mr-0 mr-md-4 w-100">
+                                    <img src="assets/images/noticias/thumb-news.jpg" alt="" class="w-100">
                                 </a>
                                 <div>
                                     <header>
